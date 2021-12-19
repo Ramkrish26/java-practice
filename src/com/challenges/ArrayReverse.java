@@ -1,5 +1,7 @@
 package com.challenges;
 
+import java.util.Arrays;
+
 public class ArrayReverse {
     public static void main(String[] args){
         int[] myArray = {1,2,3,4,5};
@@ -11,7 +13,6 @@ public class ArrayReverse {
             myArray[i] = myArray[maxIndex-i];
             myArray[maxIndex-i] = temp;
         }
-        for (int i=0;i<myArray.length;i++)
-            System.out.println(myArray[i]);
+        System.out.println(Arrays.toString(myArray));
     }
 }
